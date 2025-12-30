@@ -35,7 +35,7 @@
     <p class="text-zinc-400 text-lg mb-6">developer • creator • femboy</p>
     <div class="flex justify-center gap-6 opacity-0 animate-fade-in-delay">
       <a href="https://discord.gg/freealts" target="_blank" class="flex items-center gap-2 hover:text-blue-400">
-        <i class="ph ph-discord-logo text-2xl"></i> <span>cooking.faded</span>
+        <i class="ph ph-discord-logo text-2xl"></i> <span>faralong</span>
       </a>
       <a href="https://github.com/goodcurry" target="_blank" class="flex items-center gap-2 hover:text-blue-400">
         <i class="ph ph-github-logo text-2xl"></i> <span>goodcurry</span>
@@ -96,8 +96,7 @@
       }, 600)
     })
     async function repos() {
-      const username = "devfaded"
-      const res = await fetch(`https://api.github.com/users/${username}/repos`)
+      const res = await fetch(`https://api.github.com/users/goodcurry/repos`)
       const repos = await res.json()
       const list = document.getElementById("repo-list")
       repos.slice(0,6).forEach(r => {
@@ -123,7 +122,7 @@
     }
     stats()
     const knownpj = [
-      { name: "paradise generator", description: "account generator service, mainly focused on roblox accounts", url: "https://discord.gg/HaZVjPYx9x", lang: "Python", icon: "ph-code"},
+      { name: "paradise generator", description: "account generator service, mainly focused on roblox accounts", url: "https://discord.gg/freealts", lang: "Python", icon: "ph-code"},
       { name: "paradise exploit", description: "roblox external exploit, no longer active.", url: "#", lang: "Python", icon: "ph-code"},
       { name: "steak exchange", description: "exchanging funds, no longer active.", url: "#", lang: "Python", icon: "ph-code"}
     ];
